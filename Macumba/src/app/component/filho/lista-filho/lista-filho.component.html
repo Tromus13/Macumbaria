@@ -1,0 +1,22 @@
+<div class="container mt-2">
+  <div class="row alert-primary mb-2">
+    <div class="col">ID</div>
+    <div class="col">Nome</div>
+    <div class="col">Nascimento</div>
+    <div class="col"></div>
+  </div>
+  <div *ngFor="let filho of filhos">
+    <div class="row b">
+      <div class="col mb-1"> {{filho.id}} </div>
+      <div class="col mb-1"> {{filho.nome}} </div>
+      <div class="col mb-1"> {{filho.dtNacimento}} </div>
+      <div class="col mb-1 text-right">
+        <a [routerLink]="['/']">
+          <span class="material-icons">
+            keyboard_arrow_right
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
