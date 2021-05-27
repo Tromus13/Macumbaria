@@ -1,0 +1,2 @@
+nome;tipo;img
+Xangô;Orixa;

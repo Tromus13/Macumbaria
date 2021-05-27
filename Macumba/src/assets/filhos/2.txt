@@ -1,0 +1,2 @@
+id;nome;categoria;img
+1;Obaluae;Orixa;assets/filhos/img/orixa/obaluae.jpg

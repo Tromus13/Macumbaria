@@ -1,6 +1,6 @@
-id;Nome;Nascimento;
-1;Mãe Joana;25/06/1942;
-2;Mãe Dark;31/08/1970;
-3;Walter Cardoso;13/03/1979;
-4;Valeria Almeida;07/04/1995;
-5;Pudim;
+id;Nome;Nascimento;telefone;cargo
+1;Joana;?;?;Mãe de Santo
+2;Dark;?;?;Mãe de Santo
+3;Walter Cardoso;1979-03-13;61995599812;Filho de Santo
+4;Valeria Almeida;1995-04-07;?;Filho de Santo
+5;Gabriel Mello Alves/Puds;?;955484;Axogum

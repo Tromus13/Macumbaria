@@ -6,9 +6,12 @@
 
 <section class="mainConainer">
   <main class="container">
-    <nav class="navbar alert-primary">
-      <a class="menu" [routerLink]="['/listarFilhos']">Filhos</a>
+    <nav class="nav alert-primary py-3">
+      <li class="nav-item mr-5"><a class="menu" [routerLink]="['/']">A Casa</a></li>
+      <li class="nav-item mr-5"><a class="menu" [routerLink]="['/listarFilhos']">Filhos</a></li>
+      <li class="nav-item mr-5"><a class="menu" [routerLink]="['/']">Liturgia</a></li>
     </nav>
+
     <router-outlet></router-outlet>
   </main>
 </section>

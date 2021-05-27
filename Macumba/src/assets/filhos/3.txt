@@ -1,0 +1,3 @@
+id;nome;categoria;imagem
+1;Xangô Agodo;Orixa;assets/filhos/img/orixa/xango.jpg
+2;Yansã;Orixa;

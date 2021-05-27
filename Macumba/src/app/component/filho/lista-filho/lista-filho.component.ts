@@ -1,3 +1,4 @@
+import { Util } from './../../../util/util';
 import { HttpClient } from '@angular/common/http';
 import { Filho } from './../../../module/filho';
 import { ServiceFilhoService } from './../../../service/service-filho.service';
@@ -11,33 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaFilhoComponent implements OnInit {
 
+  formatData = Util.formatData;
+
   linhas:string[]= []
   filhos:Filho[] = [];
   constructor(
     private http:HttpClient,
-    private service:ArquivoService,
+    private arquivoServico:ArquivoService,
   ) { }
 
   ngOnInit(): void {
-
-    this.montarFilhos();
-  }
-  montarFilhos() {
-    this.http.get("assets/Filho.txt", { responseType: 'text'}).subscribe(data => {
-
-      this.linhas = data.split(/\r?\n|\r/);
-
-      this.linhas.forEach((linha:any, i:number) => {
-      const aux = linha.split(';');
-        if(i > 0) {
-          const filho: Filho = new Filho();
-          filho.id = aux[0];
-          filho.nome = aux[1];
-          filho.dtNacimento = aux[2] == "" ? "-" : aux[2];
-          this.filhos.push(filho);
-        }
-      });
-      console.log(this.filhos);
-    });
+    this.filhos = this.arquivoServico.filhos;
   }
 }

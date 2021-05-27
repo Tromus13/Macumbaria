@@ -3,15 +3,19 @@
     <div class="col">ID</div>
     <div class="col">Nome</div>
     <div class="col">Nascimento</div>
+    <div class="col">Telefone</div>
+    <div class="col">Cargo</div>
     <div class="col"></div>
   </div>
   <div *ngFor="let filho of filhos">
     <div class="row b">
-      <div class="col mb-1"> {{filho.id}} </div>
+      <div class="col mb-1" width="12px"> {{filho.id}} </div>
       <div class="col mb-1"> {{filho.nome}} </div>
-      <div class="col mb-1"> {{filho.dtNacimento}} </div>
+      <div class="col mb-1"> {{formatData(filho.dtNacimento)}} </div>
+      <div class="col mb-1"> {{filho.telefone}} </div>
+      <div class="col mb-1"> {{filho.cargo}} </div>
       <div class="col mb-1 text-right">
-        <a [routerLink]="['/']">
+        <a [routerLink]="['/filho', filho.id]" class="badge alert-primary">
           <span class="material-icons">
             keyboard_arrow_right
           </span>

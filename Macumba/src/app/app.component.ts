@@ -1,3 +1,4 @@
+import { ArquivoService } from './service/arquivo.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Macumba';
 
-  constructor() {
+  constructor(
+    private arquivoServico:ArquivoService
+  ) { }
 
+  ngOnInit() {
+    this.arquivoServico.montarFilhos();
   }
 }
