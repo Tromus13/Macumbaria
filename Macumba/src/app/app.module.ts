@@ -1,3 +1,4 @@
+import { LiturgiaComponent } from './component/home/liturgia/liturgia.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,8 @@ import { DetalheFilhoComponent } from './component/filho/detalhe-filho/detalhe-f
     AppComponent,
     HomeComponent,
     ListaFilhoComponent,
-    DetalheFilhoComponent
+    DetalheFilhoComponent,
+    LiturgiaComponent
   ],
   imports: [
     BrowserModule,
