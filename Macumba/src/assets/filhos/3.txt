@@ -1,3 +1,8 @@
-id;nome;categoria;imagem
-1;Xangô Agodo;Orixa;assets/filhos/img/orixa/xango.jpg
-2;Yansã;Orixa;
+id;	dijina;							categoria;	tipo;		imagem
+1;	Xangô Agodo;					Orixa;		Pai;		assets/filhos/img/armas/machado.bmp
+2;	Yansã;							Orixa;		Mãe;		assets/filhos/img/armas/chicote.bmp
+3;	Oxossi;							Orixa;		Padrinho;	assets/filhos/img/armas/arco.bmp
+4;	Oxum;							Orixa;		Madrinha;	assets/filhos/img/armas/espelho.bmp
+5;	Serra Negra(Zé Floriano);		Boiadeiro;	Catiço;		assets/filhos/img/armas/laco.bmp
+6;	Ubirajara do Peito de aço;		Caboclo;	Catiço;		assets/filhos/img/armas/penacho.bmp
+7; 	Pai Sebastião de Aruanda;		Preto Velho;Catiço;		assets/filhos/img/armas/cachimbo.bmp

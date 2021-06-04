@@ -34,6 +34,7 @@ export class ArquivoService {
           filho.dtNacimento = new Date(Util.validarCampo(aux[Filho.P_DTNASCIMENTO]));
           filho.telefone = Util.formatTelefone(Util.validarCampo(aux[Filho.P_TELEFONE]));
           filho.cargo = Util.validarCampo(aux[Filho.P_CARGO]);
+          filho.img = Util.validarCampo(aux[Filho.P_IMG]);
           this.filhos.push(filho);
         }
       });

@@ -42,15 +42,15 @@ export class DetalheFilhoComponent implements OnInit {
       const aux = linha.split(';');
         if(i > 0) {
           const ent:Entidade = new Entidade();
-          ent.id = aux[Entidade.P_ID];
-          ent.nome = aux[Entidade.P_NOME];
-          ent.categoria = aux[Entidade.P_CATEGORIA];
-          ent.imagem = aux[Entidade.P_IMAGEM];
+          ent.id = parseInt(Util.validarCampo(aux[Entidade.P_ID]));
+          ent.dijina = Util.validarCampo(aux[Entidade.P_DIJINA]);
+          ent.categoria = Util.validarCampo(aux[Entidade.P_CATEGORIA]);
+          ent.imagem = Util.validarCampo(aux[Entidade.P_IMAGEM]);
+          ent.tipo = Util.validarCampo(aux[Entidade.P_TIPO]);
 
           this.entidades.push(ent);
         }
       });
-      console.log(this.entidades);
     });
   }
 

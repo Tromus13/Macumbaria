@@ -1,6 +1,6 @@
-id;Nome;Nascimento;telefone;cargo
-1;Joana;?;?;Mãe de Santo
-2;Dark;?;?;Mãe de Santo
-3;Walter Cardoso;1979-03-13;61995599812;Filho de Santo
-4;Valeria Almeida;1995-04-07;?;Filho de Santo
-5;Gabriel Mello Alves/Puds;?;955484;Axogum
+id;Nome;Nascimento;telefone;cargo;foto
+1;Joana;?;?;Mãe de Santo;?
+2;Dark;?;?;Mãe de Santo;?
+3;Walter Cardoso;1979-03-13;819855991375;Filho de Santo;assets/filhos/img/pessoal/3.bmp
+4;Valeria Almeida;1995-04-07;?;Filho de Santo;?
+5;Gabriel Mello Alves/Puds;1999-08-12;519925632145;Axogum;?

@@ -6,9 +6,11 @@ export class Filho extends Padrao {
   public static P_DTNASCIMENTO : number = 2;
   public static P_TELEFONE : number = 3;
   public static P_CARGO : number = 4;
+  public static P_IMG: number = 5;
 
   public nome:string="";
   public dtNacimento:Date=new Date;
   public telefone:string = "";
   public cargo:string="";
+  public img:string="";
 }
