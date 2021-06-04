@@ -1,25 +1,36 @@
 
-<div class="container mt-2">
-  <div class="row menu mt-3">
-    <div class="col"> Filho:{{filho.nome}}</div>
-    <div class="col"> Aniversário: {{mesVersario(filho.dtNacimento)}}</div>
-    <div class="col"> <a target="_blank" href="{{filho.img}}"><img src="{{filho.img}}" alt=""></a></div>
-  </div>
 
-  <div class="row mt-2 alert-success">
-    <div class="col">Dijína</div>
-    <div class="col">Categoria</div>
-    <div class="col">Tipo</div>
-    <div class="col"></div>
-  </div>
-  <div *ngFor="let ent of entidades">
-    <div class="row mt-2 ">
-      <div class="col">{{ent.dijina}}</div>
-      <div class="col">{{ent.categoria}}</div>
-      <div class="col">{{ent.tipo}}</div>
-      <div class class="col text-right">
+<table class="table table-sm">
+  <tbody class="menu">
+    <tr>
+      <td class="align-middle">Filho:{{filho.nome}} </td>
+      <td class="align-middle">Aniversário:{{mesVersario(filho.dtNacimento)}} </td>
+      <td class="align-middle text-right">
+        <a target="_blank" href="{{filho.img}}">
+          <img src="{{filho.img}}" alt="">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-sm table-hover">
+  <thead>
+    <tr class="table-success">
+      <th scope="col">Dijína</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Tipo</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ent of entidades">
+      <td class="align-middle" style="width: 250px;">{{ent.dijina}}</td>
+      <td class="align-middle" style="width: 150px;">{{ent.categoria}}</td>
+      <td class="align-middle">{{ent.tipo}}</td>
+      <td class="text-right align-middle">
         <img src="{{ent.imagem}}" alt="">
-      </div>
-    </div>
-  </div>
-</div>
+      </td>
+    </tr>
+</tbody>
+</table>

@@ -6,3 +6,5 @@ id;	dijina;							categoria;	tipo;		imagem
 5;	Serra Negra(Zé Floriano);		Boiadeiro;	Catiço;		assets/filhos/img/armas/laco.bmp
 6;	Ubirajara do Peito de aço;		Caboclo;	Catiço;		assets/filhos/img/armas/penacho.bmp
 7; 	Pai Sebastião de Aruanda;		Preto Velho;Catiço;		assets/filhos/img/armas/cachimbo.bmp
+8;	Sete Capas;						Exu;		Catiço;		assets/filhos/img/armas/tridente.bmp
+9;	Jorginho de Aruanda;			Ere;		Catiço;		assets/filhos/img/armas/bone.bmp
